@@ -1,0 +1,30 @@
+﻿<Properties StartupConfiguration="{4C912088-9A96-4EC0-8072-B95FDA3ADBA7}|Default">
+  <MonoDevelop.Ide.ItemProperties.affirmLoans PreferredExecutionTarget="MonoDevelop.Default" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="readme.md">
+    <Files>
+      <File FileName="Program.cs" Line="30" Column="67" />
+      <File FileName="Processors/LoanProcessor.cs" Line="51" Column="42" />
+      <File FileName="readme.md" Line="17" Column="60" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="affirmLoans" expanded="True">
+            <Node name="affirmLoans" expanded="True">
+              <Node name="Interfaces" expanded="True" />
+              <Node name="Processors" expanded="True" />
+              <Node name="Services" expanded="True" />
+              <Node name="readme.md" selected="True" />
+            </Node>
+          </Node>
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>

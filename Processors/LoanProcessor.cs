@@ -62,7 +62,7 @@ namespace affirmLoans.Processors
                             - loan.DefaultLikelyhood * loan.Amount - facility.InterestRate * loan.Amount;
 
                         // then make sure we have funds at this facility and expected Yield is nonnegative
-                        if (loan.Amount < facility.AvailableFunds && expectedYield > 0 ) {
+                        if ( (loan.Amount < facility.AvailableFunds) && expectedYield > 0 ) {
                             // ready to fund
                             var assignment = new Assignment
                             {
@@ -75,7 +75,6 @@ namespace affirmLoans.Processors
                             // deduct from available funds
                             facility.AvailableFunds -= loan.Amount;
 
-                            
 
                             var yieldRecord = yields.FirstOrDefault(y => y.FacilityId == facility.Id);
                             if (yieldRecord != null) {

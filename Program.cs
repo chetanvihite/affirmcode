@@ -8,7 +8,18 @@ namespace affirmLoans
     {
         static void Main(string[] args)
         {
-            var basePath = "/Users/cvihite/projects/samples/affirm-coding/affirmLoans/Assets/small";
+            if (args == null || args.Length != 1) {
+                Console.WriteLine("no base path argument found...");
+                return;                
+            }
+
+            var basePath = args[0];
+
+            if (string.IsNullOrEmpty(basePath))
+            {
+                Console.WriteLine("no base path found...");
+                return;
+            }
 
             var facilities = new FacilityService().GetFacilities($"{basePath}/facilities.csv");
             var banks = new BankService().GetBanks($"{basePath}/banks.csv");

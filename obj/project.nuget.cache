@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "KllbpiGtBE1kOxJu4k+aXNFEhAyRzDySjlp1L13AE5V1ZW4vMLtFpDqw/ucX+KXDlX7fUCAe6dzoZPqqTcJrAg==",
+  "success": true,
+  "projectFilePath": "/Users/cvihite/projects/samples/affirm-coding/affirmLoans/affirmLoans.csproj",
+  "expectedPackageFiles": [
+    "/Users/cvihite/.nuget/packages/csvhelper/15.0.9/csvhelper.15.0.9.nupkg.sha512",
+    "/Users/cvihite/.nuget/packages/microsoft.csharp/4.5.0/microsoft.csharp.4.5.0.nupkg.sha512"
+  ],
+  "logs": []
+}

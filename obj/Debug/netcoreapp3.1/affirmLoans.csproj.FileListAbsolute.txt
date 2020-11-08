@@ -1,0 +1,14 @@
+/Users/cvihite/projects/samples/affirm-coding/affirmLoans/bin/Debug/netcoreapp3.1/affirmLoans.deps.json
+/Users/cvihite/projects/samples/affirm-coding/affirmLoans/bin/Debug/netcoreapp3.1/affirmLoans.runtimeconfig.json
+/Users/cvihite/projects/samples/affirm-coding/affirmLoans/bin/Debug/netcoreapp3.1/affirmLoans.runtimeconfig.dev.json
+/Users/cvihite/projects/samples/affirm-coding/affirmLoans/bin/Debug/netcoreapp3.1/affirmLoans.dll
+/Users/cvihite/projects/samples/affirm-coding/affirmLoans/bin/Debug/netcoreapp3.1/affirmLoans.pdb
+/Users/cvihite/projects/samples/affirm-coding/affirmLoans/bin/Debug/netcoreapp3.1/CsvHelper.dll
+/Users/cvihite/projects/samples/affirm-coding/affirmLoans/obj/Debug/netcoreapp3.1/affirmLoans.csprojAssemblyReference.cache
+/Users/cvihite/projects/samples/affirm-coding/affirmLoans/obj/Debug/netcoreapp3.1/affirmLoans.AssemblyInfoInputs.cache
+/Users/cvihite/projects/samples/affirm-coding/affirmLoans/obj/Debug/netcoreapp3.1/affirmLoans.AssemblyInfo.cs
+/Users/cvihite/projects/samples/affirm-coding/affirmLoans/obj/Debug/netcoreapp3.1/affirmLoans.csproj.CoreCompileInputs.cache
+/Users/cvihite/projects/samples/affirm-coding/affirmLoans/obj/Debug/netcoreapp3.1/affirmLoans.csproj.CopyComplete
+/Users/cvihite/projects/samples/affirm-coding/affirmLoans/obj/Debug/netcoreapp3.1/affirmLoans.dll
+/Users/cvihite/projects/samples/affirm-coding/affirmLoans/obj/Debug/netcoreapp3.1/affirmLoans.pdb
+/Users/cvihite/projects/samples/affirm-coding/affirmLoans/obj/Debug/netcoreapp3.1/affirmLoans.genruntimeconfig.cache
