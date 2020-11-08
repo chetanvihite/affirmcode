@@ -5,7 +5,6 @@ using System.IO;
 using System.Linq;
 using System.Text;
 using affirmLoans.Business;
-using affirmLoans.Mappers;
 using CsvHelper;
 
 namespace affirmLoans.Services
@@ -19,7 +18,6 @@ namespace affirmLoans.Services
                 using (var streamReader = new StreamReader(filePath, Encoding.Default))
                 using (var csv = new CsvReader(streamReader, CultureInfo.InvariantCulture))
                 {
-                    csv.Configuration.RegisterClassMap<LoansMap>();
                     var loans = csv.GetRecords<Loan>().ToList();
                     return loans;
                 }
