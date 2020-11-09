@@ -1,25 +1,20 @@
-﻿using System;
+﻿
+
 using System.Collections.Generic;
-using System.Globalization;
-using System.IO;
-using System.Linq;
-using System.Text;
 using affirmLoans.Business;
-using CsvHelper;
+using affirmLoans.Interfaces;
+using affirmLoans.Utils;
 
 namespace affirmLoans.Services
 {
     public class AssignmentService
     {
+        
         public void WriteAssignmentsToCSV(List<Assignment> assignments, string filePath)
-        {          
+        {
+            ICSVWrapper<Assignment> csvHelper = new CSVWrapper<Assignment>();
+            csvHelper.WriteToCSV(assignments, filePath);
 
-            // write output file
-            using (var writer = new StreamWriter(filePath))
-            using (var csv = new CsvWriter(writer, CultureInfo.InvariantCulture))
-            {
-                csv.WriteRecords(assignments);
-            }
         }
     }
 }

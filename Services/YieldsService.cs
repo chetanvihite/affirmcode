@@ -1,9 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Globalization;
-using System.IO;
 using affirmLoans.Business;
-using CsvHelper;
+using affirmLoans.Interfaces;
+using affirmLoans.Utils;
 
 namespace affirmLoans.Services
 {
@@ -14,13 +13,9 @@ namespace affirmLoans.Services
             foreach (var yield in yields) {
                 yield.ExpectedYield = Math.Round(yield.ExpectedYield);
             }
-            
-            // write output file
-            using (var writer = new StreamWriter(filePath))
-            using (var csv = new CsvWriter( writer, CultureInfo.InvariantCulture))
-            {
-                csv.WriteRecords(yields);
-            }
+
+            ICSVWrapper<Yield> csvHelper = new CSVWrapper<Yield>();
+            csvHelper.WriteToCSV(yields, filePath);
         }
     }
 }

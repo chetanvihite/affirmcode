@@ -1,11 +1,7 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Globalization;
-using System.IO;
-using System.Linq;
-using System.Text;
+﻿using System.Collections.Generic;
 using affirmLoans.Business;
-using CsvHelper;
+using affirmLoans.Interfaces;
+using affirmLoans.Utils;
 
 namespace affirmLoans.Services
 {
@@ -13,20 +9,11 @@ namespace affirmLoans.Services
     {
         public List<Loan> GetLoans(string filePath)
         {
-            try
-            {
-                using (var streamReader = new StreamReader(filePath, Encoding.Default))
-                using (var csv = new CsvReader(streamReader, CultureInfo.InvariantCulture))
-                {
-                    var loans = csv.GetRecords<Loan>().ToList();
-                    return loans;
-                }
-            }
-            catch (Exception e)
-            {
-                // log exception, raise exception and caller should handle it gracefully
-                throw new Exception(e.Message);
-            }
+            ICSVWrapper<Loan> csvWrapper = new CSVWrapper<Loan>();
+
+            var loans = csvWrapper.ReadCSV(filePath);
+
+            return loans;
         }
     }
 }
