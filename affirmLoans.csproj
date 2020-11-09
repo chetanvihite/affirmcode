@@ -7,12 +7,12 @@
 
   <ItemGroup>
     <PackageReference Include="CSVHelper" Version="15.0.9" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="3.1.9" />
   </ItemGroup>
 
   <ItemGroup>
     <Folder Include="Services\" />
     <Folder Include="Processors\" />
     <Folder Include="Interfaces\" />
-    <Folder Include="Utils\" />
   </ItemGroup>
 </Project>

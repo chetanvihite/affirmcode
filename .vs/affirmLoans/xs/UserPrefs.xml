@@ -1,16 +1,18 @@
 ﻿<Properties StartupConfiguration="{4C912088-9A96-4EC0-8072-B95FDA3ADBA7}|Default">
   <MonoDevelop.Ide.ItemProperties.affirmLoans PreferredExecutionTarget="MonoDevelop.Default" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Services/LoanService.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Services/CovenantService.cs">
     <Files>
-      <File FileName="Program.cs" Line="16" Column="36" />
-      <File FileName="Processors/LoanProcessor.cs" Line="68" Column="30" />
-      <File FileName="Services/AssignmentService.cs" Line="20" Column="1" />
-      <File FileName="Services/BankService.cs" Line="4" Column="30" />
-      <File FileName="Services/CovenantsService.cs" Line="4" Column="30" />
-      <File FileName="Services/FacilityService.cs" Line="5" Column="1" />
-      <File FileName="Services/FormatCovenantsService.cs" Line="24" Column="46" />
+      <File FileName="Program.cs" Line="31" Column="1" />
+      <File FileName="Processors/LoanProcessor.cs" Line="54" Column="42" />
+      <File FileName="Services/AssignmentService.cs" Line="7" Column="1" />
+      <File FileName="Services/BankService.cs" Line="5" Column="1" />
+      <File FileName="Services/CovenantsService.cs" Line="5" Column="1" />
+      <File FileName="Services/FacilityService.cs" Line="2" Column="28" />
+      <File FileName="Services/FormatCovenantsService.cs" Line="6" Column="31" />
       <File FileName="Services/LoanService.cs" Line="3" Column="7" />
       <File FileName="Services/YieldsService.cs" Line="8" Column="2" />
+      <File FileName="Services/CovenantService.cs" Line="20" Column="1" NotebookId="1" />
+      <File FileName="Services/ICovenantRules.cs" NotebookId="1" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
@@ -21,9 +23,8 @@
               <Node name="Interfaces" expanded="True" />
               <Node name="Processors" expanded="True" />
               <Node name="Services" expanded="True">
-                <Node name="LoanService.cs" selected="True" />
+                <Node name="CovenantService.cs" selected="True" />
               </Node>
-              <Node name="Utils" expanded="True" />
             </Node>
           </Node>
         </State>

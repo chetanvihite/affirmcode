@@ -15,6 +15,7 @@ namespace affirmLoans.Processors
         private List<Assignment> loanAssignments = new List<Assignment>();
         private List<Yield> yields = new List<Yield>();
         private IFormatCovenantsService formatCovenants = new FormatCovenantsService();
+        private CovenantService covenantService = new CovenantService();
 
         public LoanProcessor(List<Facility> facilities, List<Bank> banks, List<Covenant> covenants)
         {
@@ -52,9 +53,11 @@ namespace affirmLoans.Processors
                     }
                     // get covenants
                     var facilityCovenants = formattedCovenants.Where(c => c.FacilityId == facility.Id).FirstOrDefault();
-
+                                        
+                    var covenantsRuleStatus = covenantService.CheckCovenants(facilityCovenants, loan);
                     // make sure loan is not originating from banned state and max default likelihood is less
-                    if (!facilityCovenants.BannedStates.Contains(loan.State) && loan.DefaultLikelyhood <= facilityCovenants.MaxDefaultLikelihood )
+                    //if (!facilityCovenants.BannedStates.Contains(loan.State) && loan.DefaultLikelyhood <= facilityCovenants.MaxDefaultLikelihood )
+                    if ( covenantsRuleStatus == true) //if it passes all the covenants
                     {
                         // calculate yield for this facility
                         var expectedYield = (1 - loan.DefaultLikelyhood) * loan.InterestRate * loan.Amount
